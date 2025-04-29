@@ -1,0 +1,152 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+}
+
+header nav
+{
+    background-color: black;
+    color: whitesmoke;
+    padding:30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo
+{
+    width: 150px;
+    position: absolute;
+    left: 45%;
+    top: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+header nav form{
+    display: flex;
+}
+
+#searchBox
+{
+    width: 250px;
+    height: 45px;
+    padding: 8px;
+    background-color: rgb(255, 255, 255);
+    font-size: 22px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius:15px;
+    margin-right: 5px;
+}
+
+#search-btn{
+    background-color: rgb(255, 230, 66);;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    border: white solid 2px;
+    border-radius: 50%;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+}
+
+.top-txt{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#search-btn:hover{
+    transform: scale(1.2);
+}
+
+.recipe-container{
+    text-align: center;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 40px;
+    width: 80%; 
+    margin: 10px auto;
+    padding: 20px;
+    place-items: center;
+}
+
+
+
+.recipe{
+    background-color: rgb(255, 225, 0);
+    display: flex;
+    flex-direction: column;
+    border: 8px rgb(255, 225, 0) solid;
+    border-radius: 10px;
+    transition: ease-in-out 0.2s;
+    max-width: 350px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.recipe:hover{
+    transform: scale(1.02);
+    box-shadow: 5px 5px 15px gray;
+}
+
+.recipe img{
+    border: none;
+    border-radius: 10PX;
+    transition: ease-in-out 0.2s;
+}
+
+.recipe img:hover{
+    transform: scale(1.025);
+}
+
+.recipe button{
+    background-color: #000000;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    color: yellow;
+    margin: 10px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    transition: ease-in-out 0.15s;
+}
+
+.recipe button:hover{
+    background-color:#e00101;
+}
+
+/* Responsive code */
+@media screen and (max-width:768px){
+    .logo{
+        display: none;
+    }
+
+    header nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    #searchBox{
+        width: 300px;
+        height: 45px;
+    }
+
+    #search-btn{
+        width: 45px;
+        height: 45px;
+    }
+
+}
