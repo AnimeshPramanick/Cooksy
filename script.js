@@ -47,7 +47,7 @@ const fetchRandomRecipes = async () => {
   topText.innerHTML = "<h1>Suggestion</h1>";
   recipeContainer.innerHTML = "";
 
-  for (let i = 0; i < 21; i++) {
+  for (let i = 0; i < 12; i++) {
     const res = await fetch(
       "https://www.themealdb.com/api/json/v1/1/random.php"
     );
